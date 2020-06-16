@@ -64,6 +64,11 @@ print(np.concatenate((y_pred.reshape(len(y_pred),1),y_test.reshape(len(y_test),1
 accuracy = regressor.score(X_test,y_test)
 print(accuracy*100,'%')
 
+'''Making a single prediction (for example the profit of a startup with R&D Spend = 160000, 
+Administration Spend = 130000, Marketing Spend = 300000 and State = 'California')'''
+
+print(regressor.predict([[0,0,160000,130000,30000]]))
+
 
 
 
