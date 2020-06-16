@@ -70,6 +70,12 @@ Administration Spend = 130000, Marketing Spend = 300000 and State = 'California'
 print(regressor.predict([[0,0,160000,130000,30000]]))
 
 
+'''Getting the final linear regression equation with the values of the coefficients'''
+
+print(regressor.coef_)
+print(regressor.intercept_)
+
+
 
 
 
